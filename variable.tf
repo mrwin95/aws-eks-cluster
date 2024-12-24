@@ -22,3 +22,18 @@ variable "managed-nodes" {
   type    = string
   default = "managed-nodes"
 }
+
+variable "desired_size" {
+  type    = number
+  default = 0
+}
+
+variable "max_size" {
+  type    = number
+  default = 2
+}
+
+variable "min_size" {
+  type    = number
+  default = 0
+}
