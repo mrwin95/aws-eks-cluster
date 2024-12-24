@@ -9,7 +9,7 @@ resource "aws_eks_node_group" "example" {
     max_size     = var.max_size
     min_size     = var.min_size
   }
-  instance_types = ["t2.micro"]
+  instance_types = ["t3.medium"]
 
   depends_on = [
     aws_iam_role_policy_attachment.example-AmazonEKSWorkerNodePolicy,
